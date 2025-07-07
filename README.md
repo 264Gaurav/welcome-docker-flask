@@ -3,9 +3,11 @@
 ## Project Setup
 
 1. **Install Docker**
+
    Ensure Docker is installed on your local system. You can download it from [Docker's official website](https://www.docker.com/).
 
 2. **Login to Docker CLI**
+
    Make sure you are logged in via the Docker CLI by providing your username and password. Run the following command:
 
 ```bash
@@ -13,6 +15,7 @@ docker login
 ```
 
 3. **Clone or Download the Repository**
+
    Clone this repository using Git or download it as a ZIP file and extract it.
 
    ```bash
@@ -21,6 +24,7 @@ docker login
    ```
 
 4. **Build the Docker Image**
+
    Build the Docker image using the following command:
 
    ```bash
@@ -28,6 +32,7 @@ docker login
    ```
 
 5. **Run the Docker Container**
+
    Run the Docker container and map port 8000 of the container to port 8000 on your local machine:
 
    ```bash
@@ -37,6 +42,7 @@ docker login
    Now, you can access the server at http://localhost:8000.
 
 6. **Tag the Docker Image**
+
    Rename (tag) the Docker image to prepare it for pushing to Docker Hub:
 
    ```bash
@@ -44,7 +50,9 @@ docker login
    ```
 
 7. **Push the Docker Image to Docker Hub**
+
    Push the Docker image to your Docker Hub account:
+
    ```bash
    docker push <USER_NAME>/welcome-app:latest
    ```
@@ -55,7 +63,7 @@ Once the Docker image is pushed to Docker Hub, anyone can pull the image and run
 
 ### Steps to Use the Docker Image:
 
-1. **Pull the Docker Image**
+1.**Pull the Docker Image**
 
 Run the following command to pull the image:
 
@@ -77,7 +85,9 @@ docker run -p 8000:8000 <USER_NAME>/welcome-app:latest
 
 Ensure Docker is installed and running on your system.
 Make sure you have a Docker Hub account to push and pull images.
+
 **Flask Application:**
+
 This project contains a basic Flask application. You can modify the Flask app code as needed before building the Docker image.
 
 **Docker Commands Overview:**
@@ -89,6 +99,7 @@ docker push: Pushes a Docker image to a remote repository (e.g., Docker Hub).
 docker pull: Pulls a Docker image from a remote repository.
 
 **Accessing the Application:**
+
 After running the container, you can access the Flask application at http://localhost:8000.
 
 Feel free to customize this README further based on your project's requirements! ```
