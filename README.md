@@ -56,18 +56,20 @@ Once the Docker image is pushed to Docker Hub, anyone can pull the image and run
 ### Steps to Use the Docker Image:
 
 1. **Pull the Docker Image**
-   Run the following command to pull the image:
+
+Run the following command to pull the image:
 
 ```bash
 docker pull <USER_NAME>/welcome-app:latest
 ```
 
-2. **Run the Docker Container**
-   Use the pulled image to run the container:
+2.**Run the Docker Container**
 
-   ```bash
-   docker run -p 8000:8000 <USER_NAME>/welcome-app:latest
-   ```
+Use the pulled image to run the container:
+
+```bash
+docker run -p 8000:8000 <USER_NAME>/welcome-app:latest
+```
 
 ## Additional Information
 
